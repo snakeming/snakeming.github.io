@@ -1,6 +1,6 @@
 // filepath: /Users/cliff/Documents/GitHub/smart_go/web/firebase-messaging-sw.js
-importScripts('https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compact.js');
+importScripts('https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging-compact.js');
 // config seems to support google analytics too
 
 // config below could obtain from firebase console, web app part
