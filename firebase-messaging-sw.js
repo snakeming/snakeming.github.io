@@ -1,6 +1,10 @@
 // filepath: /Users/cliff/Documents/GitHub/smart_go/web/firebase-messaging-sw.js
-importScripts('https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging.js');
+try {
+  importScripts('https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js');
+  importScripts('https://www.gstatic.com/firebasejs/9.17.1/firebase-messaging.js');
+} catch (e) {
+  console.error('Failed to load Firebase scripts', e);
+}
 // config seems to support google analytics too
 
 // config below could obtain from firebase console, web app part
@@ -30,4 +34,3 @@ messaging.onBackgroundMessage(function(payload) {
   self.registration.showNotification(notificationTitle,
     notificationOptions);
 });
-
