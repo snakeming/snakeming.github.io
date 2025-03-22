@@ -1,0 +1,7 @@
+{
+    "api_url": {
+        "baseUrl": "https://smartgo.hopto.org/SmartMinds"
+        
+    },
+    "market": ["HK", "TH", "VN"]
+}
